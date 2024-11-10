@@ -1,10 +1,18 @@
 from flask import Blueprint
-from .controllers.ponto_controller import get_pontos
-from .controllers.rota_controller import calcular_rota
-from .controllers.localizacao_controller import atualizar_localizacao
+from .controllers.auth_controller import register_user, login_user
+from .controllers.ponto_controller import ingestao_dados, get_pontos_turisticos
+from .controllers.avaliacao_controller import avaliar_ponto, get_avaliacoes
 
 main = Blueprint('main', __name__)
 
-main.route('/pontos', methods=['GET'])(get_pontos)
-main.route('/rota', methods=['GET'])(calcular_rota)
-main.route('/localizacao', methods=['POST'])(atualizar_localizacao)
+# Rotas de autenticação.
+main.route('/register', methods=['POST'])(register_user)
+main.route('/login', methods=['POST'])(login_user)
+
+# Rotas para pontos turísticos.
+main.route('/pontos', methods=['POST'])(ingestao_dados)
+main.route('/pontos', methods=['GET'])(get_pontos_turisticos)
+
+# Rotas para avaliações.
+main.route('/avaliacao', methods=['POST'])(avaliar_ponto)
+main.route('/avaliacoes', methods=['GET'])(get_avaliacoes)
