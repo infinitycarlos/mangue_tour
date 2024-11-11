@@ -32,3 +32,19 @@ class Roteiro:
 
        finally: 
            cursor.close() 
+
+   @classmethod 
+   def delete(cls,id): 
+       cursor=mysql.connection.cursor() 
+
+       try: 
+           cursor.execute("DELETE FROM Roteiros WHERE ID_Roteiro=%s",(id,))
+           mysql.connection.commit() 
+           return True 
+        
+       except Exception as e: 
+           print(e)  
+           return False 
+        
+       finally: 
+           cursor.close()  
