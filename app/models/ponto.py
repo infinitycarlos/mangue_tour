@@ -42,8 +42,7 @@ class Ponto:
 
         return [{'ID_Ponto': ponto[0], 'Nome_Ponto': ponto[1], 'Descricao_Ponto': ponto[2],
                  'Latitude': ponto[3], 'Longitude': ponto[4], 'Logradouro': ponto[5],
-                 'Bairro': ponto[6], 'Cidade': ponto[7], 'Coordenadas_idCoordenadas': ponto[8],
-                 'Telefone': ponto[9], 'Site': ponto[10]} for ponto in resultados]
+                 'Bairro': ponto[6], 'Cidade': ponto[7], 'Site': ponto[8]} for ponto in resultados]
 
     @classmethod 
     def delete(cls, id):

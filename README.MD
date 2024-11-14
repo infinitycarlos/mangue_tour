@@ -29,10 +29,9 @@ Para usar o aplicativo, siga estas etapas:
 2. Abra o navegador e acesse `http://localhost:3000` para visualizar o aplicativo.
 
 ## Funcionalidades
-- 1. **Autenticação de Usuários**: Permite que os usuários se registrem e façam login no sistema.
-- 2. **Gerenciamento de Pontos Turísticos**: Os usuários podem adicionar, visualizar e deletar pontos turísticos.
-- 3. **Gerenciamento de Roteiros**: Os usuários podem criar, visualizar e deletar roteiros turísticos.
-- 4. **Avaliação de Roteiros**: Os usuários podem avaliar roteiros turísticos, fornecendo uma nota e um comentário.
+- 1. **Gerenciamento de Pontos Turísticos**: Os usuários podem visualizar e deletar pontos turísticos.
+- 2. **Gerenciamento de Roteiros**: Os usuários podem criar, visualizar e deletar roteiros turísticos.
+- 3. **Avaliação de Roteiros**: Os usuários podem avaliar roteiros turísticos, fornecendo uma nota e um comentário.
 
 ## Contribuição
 Se você deseja contribuir para o projeto, siga estas etapas:
