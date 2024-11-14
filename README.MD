@@ -14,9 +14,22 @@ Para instalar o aplicativo, siga estas etapas:
    ```bash
    cd seu-repositorio
    ```
-3. Instale as dependências:
+3. Crie um ambiente virtual (opcional, mas recomendado):
    ```bash
-   npm install
+   python -m venv venv
+   ```
+4. Ative o ambiente virtual:
+   - No Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - No Linux/Mac:
+     ```bash
+     source venv/bin/activate
+     ```
+5. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
    ```
 
 ## Uso
@@ -24,9 +37,9 @@ Para usar o aplicativo, siga estas etapas:
 
 1. Inicie o aplicativo:
    ```bash
-   npm start
+   python run.py
    ```
-2. Abra o navegador e acesse `http://localhost:3000` para visualizar o aplicativo.
+2. Abra o navegador e acesse `http://localhost:5000` para visualizar a API.
 
 ## Funcionalidades
 - 1. **Gerenciamento de Pontos Turísticos**: Os usuários podem visualizar e deletar pontos turísticos.
